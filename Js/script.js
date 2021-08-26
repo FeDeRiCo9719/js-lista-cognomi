@@ -10,6 +10,7 @@ Consultiamo la documentazione W3Schools o MDN per trovare i metodi javascript ch
 //2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’ | array + push
 //3. stampa la lista ordinata alfabeticamente | applicare il metodo Array.sort() 
 //4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova | Creare variabile contatore che parte da 1
+//5. Stampare in html
 
 // INPUT
 //1. var=prompt
@@ -27,4 +28,7 @@ lista.sort();
 for ( var i = 0; i<lista.length; i++) {
     position++
     console.log(lista[i] + " è in posizione " + position);
+
+    //5. Stampare in html
+    document.write(lista[i]+" è in posizione " + position + ", ");
 }
