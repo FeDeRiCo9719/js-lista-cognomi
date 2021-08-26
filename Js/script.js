@@ -23,5 +23,4 @@ for ( var i = 0; i<lista.length; i++) {
 }
 
 //3. stampa la lista ordinata alfabeticamente
-lista.sort();
-document.getElementById("List").innerHTML = lista;
+document.getElementById("List").innerHTML = lista.sort();
