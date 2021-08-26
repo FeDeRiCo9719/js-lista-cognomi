@@ -1,0 +1,22 @@
+/*---------------------- RESET ----------------------*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*---------------------- COMMON ----------------------*/
+body {
+    color: white;
+    font-family: Arial;
+    background-color: rgb(143, 60, 60);
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
