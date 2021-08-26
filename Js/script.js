@@ -30,5 +30,5 @@ for ( var i = 0; i<lista.length; i++) {
     console.log(lista[i] + " è in posizione " + position);
 
     //5. Stampare in html
-    document.write(lista[i]+" è in posizione " + position + ", ");
+    document.write(lista[i]+" è in posizione " + position + " | ");
 }
