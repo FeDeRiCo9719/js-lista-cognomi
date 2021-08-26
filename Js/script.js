@@ -27,5 +27,4 @@ lista.sort();
 for ( var i = 0; i<lista.length; i++) {
     position++
     console.log(lista[i] + " è in posizione " + position);
-    document.getElementById("List").innerHTML = lista;
 }
