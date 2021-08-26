@@ -8,19 +8,24 @@ Consultiamo la documentazione W3Schools o MDN per trovare i metodi javascript ch
 
 //1. chiedi all’utente il cognome | var=prompt
 //2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’ | array + push
-//3. stampa la lista ordinata alfabeticamente |
-//4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova | stampare con le posizioni corrette
+//3. stampa la lista ordinata alfabeticamente | applicare il metodo Array.sort() 
+//4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova | Creare variabile contatore che parte da 1
 
 // INPUT
-//1. chiedi all’utente il cognome
+//1. var=prompt
 var user_surname = prompt("Inserisci il tuo cognome");
+var position = 0;
 
-//2. inseriscilo in un array con altri cognomi
-var lista = ["Baggio", "Eboli", "Abaco", "De Luca", "Cacciatore"]; 
+//2. array + push
+var lista = ["Baggio", "Eboli", "Abaco", "De Luca", "Cacciatore"];
 lista.push(user_surname);
-for ( var i = 0; i<lista.length; i++) {
-    console.log(lista[i]);
-}
 
-//3. stampa la lista ordinata alfabeticamente
-document.getElementById("List").innerHTML = lista.sort();
+//3. applicare il metodo Array.sort()
+lista.sort();
+
+//4. Creare variabile contatore che parte da 1
+for ( var i = 0; i<lista.length; i++) {
+    position++
+    console.log(lista[i] + " è in posizione " + position);
+    document.getElementById("List").innerHTML = lista;
+}
