@@ -15,6 +15,9 @@ Consultiamo la documentazione W3Schools o MDN per trovare i metodi javascript ch
 // INPUT
 //1. var=prompt
 var user_surname = prompt("Inserisci il tuo cognome");
+user_surname = user_surname.charAt(0).toUpperCase() + user_surname.slice(1).toLowerCase(); // Convertire il dato per restituire la prima lettera maiuscola e tutto il resto minuscolo
+console.log(user_surname);
+
 var position = 0;
 
 //2. array + push
@@ -31,4 +34,5 @@ for ( var i = 0; i<lista.length; i++) {
 
     //5. Stampare in html
     document.write(lista[i]+" è in posizione " + position + " | ");
+    // document.getElementById("List").innerHTML = lista+" è in posizione " + position + " | ";
 }
