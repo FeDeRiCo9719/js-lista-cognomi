@@ -33,6 +33,19 @@ for ( var i = 0; i<lista.length; i++) {
     console.log(lista[i] + " è in posizione " + position);
 
     //5. Stampare in html
-    document.write(lista[i]+" è in posizione " + position + " | ");
-    // document.getElementById("List").innerHTML = lista+" è in posizione " + position + " | ";
+    // document.write(lista[i]+" è in posizione " + position + " | ");
+    document.getElementById("List").innerHTML += "<li>" + lista[i] +" è in posizione " + position + "</li>";
 }
+
+
+// var i = 0;
+// var indice = -1;
+
+// while ( i<lista.length && indice == -1 ) { // scorre l'array finchè 'i' è minore di lista.lenght e 'indice' è uguale a -1 
+
+//     if ( user_surname == lista[i] ) {
+//         indice = i; 
+//     }
+
+//     i++
+// }
